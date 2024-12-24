@@ -1,10 +1,23 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "../styles/index.css";
+import "../styles/App.css";
+import santaMobile from "../assets/imgs/home-mobile.png";
+import santaDesktop from "../assets/imgs/home-desktop.png";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+function Main() {
+  return (
+    <main>
+      <section className="home">
+        <picture>
+          <source media="(min-width: 1024px)" srcSet={santaDesktop} type="image/png" />
+          <img src={santaMobile} alt="Santa Claus adjusting a Christmas tree" />
+        </picture>
+        <div className="text">
+          <h2>Merry Christmas and Happy New Year!</h2>
+          <p>Christmas and a new year is about to begin, all good wishes and successes.</p>
+        </div>
+        <button className="big-button">Get Started</button>
+      </section>
+    </main>
+  );
+}
+
+export default Main;
