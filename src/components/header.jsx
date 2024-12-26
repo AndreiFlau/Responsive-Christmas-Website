@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import "../styles/App.css";
 import santaImg from "../assets/imgs/santa.png";
 import moonIcon from "../assets/icons/bx-moon.svg";
 import sunIcon from "../assets/icons/bx-sun.svg";
@@ -72,7 +71,7 @@ function Header() {
             <a className="" href="#celebrate" onClick={handleHamburgerClick}>
               Celebrate
             </a>
-            <a className="" href="#gifts" onClick={handleHamburgerClick}>
+            <a className="" href="#gift" onClick={handleHamburgerClick}>
               Gifts
             </a>
             <a className="" href="#new" onClick={handleHamburgerClick}>

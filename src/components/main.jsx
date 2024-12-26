@@ -1,21 +1,17 @@
-import "../styles/App.css";
-import santaMobile from "../assets/imgs/home-mobile.png";
-import santaDesktop from "../assets/imgs/home-desktop.png";
+import Celebrate from "./sections/Celebrate";
+import Gift from "./sections/Gift";
+import Giving from "./sections/Giving";
+import Home from "./sections/Home";
+import NewArrivals from "./sections/NewArrivals";
 
 function Main() {
   return (
     <main>
-      <section className="home">
-        <picture>
-          <source media="(min-width: 1024px)" srcSet={santaDesktop} type="image/png" />
-          <img src={santaMobile} alt="Santa Claus adjusting a Christmas tree" />
-        </picture>
-        <div className="text">
-          <h2>Merry Christmas and Happy New Year!</h2>
-          <p>Christmas and a new year is about to begin, all good wishes and successes.</p>
-        </div>
-        <button className="big-button">Get Started</button>
-      </section>
+      <Home />
+      <Giving />
+      <Celebrate />
+      <Gift />
+      <NewArrivals />
     </main>
   );
 }
