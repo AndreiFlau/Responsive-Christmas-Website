@@ -1,4 +1,8 @@
-function FavoriteHeart({ isFavorite, onToggle }) {
+import { useFavorites } from "../context/FavoritesContext";
+
+function FavoriteHeart({ itemName }) {
+  const { favorites, handleFavorite } = useFavorites();
+
   const HeartIcon = () => (
     <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
@@ -18,8 +22,11 @@ function FavoriteHeart({ isFavorite, onToggle }) {
   );
 
   return (
-    <button onClick={onToggle} aria-label={isFavorite ? "Remove from favorites" : "Add to favorites"}>
-      {isFavorite ? <FilledHeartIcon /> : <HeartIcon />}
+    <button
+      onClick={() => handleFavorite(itemName)}
+      aria-label={favorites[itemName] ? "Remove from favorites" : "Add to favorites"}
+    >
+      {favorites[itemName] ? <FilledHeartIcon /> : <HeartIcon />}
     </button>
   );
 }
