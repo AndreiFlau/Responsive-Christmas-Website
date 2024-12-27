@@ -23,6 +23,7 @@
 
 html {
   background-color: var(--background-color);
+  overflow-x: hidden;
 }
 
 html * {
@@ -36,7 +37,8 @@ h4 {
   color: var(--title-color);
 }
 
-p {
+p,
+li {
   color: var(--text-color);
 }
 
@@ -513,11 +515,89 @@ main {
   color: white;
 }
 
+footer {
+  margin-top: 100px;
+  overflow: hidden;
+  position: relative;
+}
+
 footer h4 {
   font-size: 15px;
   font-weight: 500;
   line-height: 22.5px;
 }
+
+footer li,
+footer ul {
+  list-style: none;
+  padding: 0;
+  border: 0;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer h3 {
+  margin-bottom: 20px;
+}
+
+footer .content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: 24px;
+  margin-left: 24px;
+}
+
+.footer-1 .santa {
+  display: flex;
+  align-items: center;
+}
+
+.footer-1 .santa img {
+  width: 35px;
+  height: 35px;
+}
+
+.footer-1 p {
+  width: 160px;
+}
+
+.footer-4 .stores {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-4 img {
+  width: 30%;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+
+.christmas-ball1 {
+  position: absolute;
+  top: 20%;
+  left: 62%;
+}
+
+.christmas-ball2 {
+  position: absolute;
+  top: 65%;
+  left: 88%;
+}
+
+
+
+
 
 /* header .hamburger {
   display: none;
