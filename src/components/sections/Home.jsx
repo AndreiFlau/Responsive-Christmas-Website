@@ -11,8 +11,8 @@ function Home() {
       <div className="text">
         <h2>Merry Christmas and Happy New Year!</h2>
         <p>Christmas and a new year is about to begin, all good wishes and successes.</p>
+        <button className="big-button">Get Started</button>
       </div>
-      <button className="big-button">Get Started</button>
     </section>
   );
 }

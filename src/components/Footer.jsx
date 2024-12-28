@@ -41,7 +41,7 @@ function Footer() {
       </div>
       <div className="copyright">
         <p>
-          <a href="https://www.figma.com/community/file/1260466205962818266">© Bedimcode.</a>
+          <a href="https://www.figma.com/community/file/1260466205962818266">© Bedimcode.</a>{" "}
           <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
         </p>
       </div>

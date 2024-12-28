@@ -44,6 +44,20 @@ function Header() {
         <h1>Christmas</h1>
       </div>
       <div className="header-2">
+        <nav>
+          <a className="" href="#home" onClick={handleHamburgerClick}>
+            Home
+          </a>
+          <a className="" href="#celebrate" onClick={handleHamburgerClick}>
+            Celebrate
+          </a>
+          <a className="" href="#gift" onClick={handleHamburgerClick}>
+            Gifts
+          </a>
+          <a className="" href="#new" onClick={handleHamburgerClick}>
+            New
+          </a>
+        </nav>
         {theme === "light" ? (
           <button className="icon-button" onClick={() => changeThemeFunc(theme)}>
             <img src={moonIcon} alt="moon" />
