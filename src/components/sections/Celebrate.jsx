@@ -7,8 +7,8 @@ function Celebrate() {
       <div className="text">
         <h2>Celebrate With A Lot Of Love</h2>
         <p>
-          In this holidays, celebrate with much love and peace, offering many blessings to our loved ones, friends and neighbors,
-          wishing them a good Christmas message.
+          Make this holiday season unforgettable by spreading warmth and kindness to family, friends, and neighbors. Let's share
+          blessings and create cherished memories together.
         </p>
         <button className="big-button" onClick={() => alert("Merry Christmas!")}>
           Send Good Wishes

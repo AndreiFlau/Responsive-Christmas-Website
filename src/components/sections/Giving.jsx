@@ -10,7 +10,7 @@ function Giving() {
         <div className="giving-1">
           <img src={giving1} alt="a wrapped present" />
           <h3>Surprise gifts</h3>
-          <p>They are the best gifts there is</p>
+          <p>Carefully chosen gifts for your loved ones</p>
         </div>
         <div className="giving-2">
           <img src={giving2} alt="Christmas bells" />

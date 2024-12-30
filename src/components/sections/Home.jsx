@@ -10,7 +10,7 @@ function Home() {
       </picture>
       <div className="text">
         <h2>Merry Christmas and Happy New Year!</h2>
-        <p>Christmas and a new year is about to begin, all good wishes and successes.</p>
+        <p>Join us in making this Christmas season magical as we welcome the New Year with hope and cheer.</p>
         <a className="big-button" href="#celebrate">
           Get Started
         </a>

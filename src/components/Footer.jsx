@@ -13,7 +13,7 @@ function Footer() {
             <img src={santaImg} alt="santa" />
             <h4>Christmas</h4>
           </div>
-          <p>This Christmas give a lot of love</p>
+          <p>Let's make this Christmas extra special with lots of love</p>
         </div>
         <div className="footer-2">
           <h3>Our Services</h3>
