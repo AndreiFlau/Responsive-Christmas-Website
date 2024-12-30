@@ -18,31 +18,51 @@ function Footer() {
         <div className="footer-2">
           <h3>Our Services</h3>
           <ul>
-            <li>Pricing</li>
-            <li>Discounts</li>
-            <li>Shipping mode</li>
+            <a>
+              <li>Pricing</li>
+            </a>
+            <a>
+              <li>Discounts</li>
+            </a>
+            <a>
+              <li>Shipping mode</li>
+            </a>
           </ul>
         </div>
         <div className="footer-3">
           <h3>Support</h3>
           <ul>
-            <li>FAQs</li>
-            <li>Support center</li>
-            <li>Contact Us</li>
+            <a>
+              <li>FAQs</li>
+            </a>
+            <a>
+              <li>Support center</li>
+            </a>
+            <a>
+              <li>Contact Us</li>
+            </a>
           </ul>
         </div>
         <div className="footer-4">
           <h3>Available On</h3>
           <div className="stores">
-            <img src={googlePlay} alt="google play" />
-            <img src={appStore} alt="app store" />
+            <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+              <img src={googlePlay} alt="google play" />
+            </a>
+            <a href="https://apps.apple.com/" target="_blank" rel="noopener noreferrer">
+              <img src={appStore} alt="app store" />
+            </a>
           </div>
         </div>
       </div>
       <div className="copyright">
         <p>
-          <a href="https://www.figma.com/community/file/1260466205962818266">© Bedimcode.</a>{" "}
-          <a href="https://creativecommons.org/licenses/by/4.0">CC BY 4.0</a>
+          <a href="https://www.figma.com/community/file/1260466205962818266" target="_blank" rel="noopener noreferrer">
+            © Bedimcode.
+          </a>{" "}
+          <a href="https://creativecommons.org/licenses/by/4.0" target="_blank" rel="noopener noreferrer">
+            CC BY 4.0
+          </a>
         </p>
       </div>
       <img className="christmas-ball1" src={footer1} alt="Christmas balls" />
