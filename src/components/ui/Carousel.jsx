@@ -5,11 +5,19 @@ function Carousel({ items }) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   function nextSlide() {
-    setCurrentIndex((prevIndex) => (prevIndex === items.length - 1 ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) => {
+      const nextIndex = prevIndex + 1;
+      const maxIndex = items.length - 3;
+      return nextIndex > maxIndex ? 0 : nextIndex;
+    });
   }
 
   function prevSlide() {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? items.length - 1 : prevIndex - 1));
+    setCurrentIndex((prevIndex) => {
+      const prevIdx = prevIndex - 1;
+      const maxIndex = items.length - 3;
+      return prevIdx < 0 ? maxIndex : prevIdx;
+    });
   }
 
   return (
@@ -22,8 +30,8 @@ function Carousel({ items }) {
             </div>
           ))}
         </div>
-        {/* <button onClick={prevSlide} className="carousel-button prev"></button>
-        <button onClick={nextSlide} className="carousel-button next"></button> */}
+        <button onClick={prevSlide} className="carousel-button prev"></button>
+        <button onClick={nextSlide} className="carousel-button next"></button>
       </div>
       <div className="carousel-dots">
         {items.map((_, index) => (

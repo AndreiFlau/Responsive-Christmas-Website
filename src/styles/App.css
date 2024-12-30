@@ -62,6 +62,14 @@ header nav {
   display: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+button a {
+  color: white;
+}
+
 .header-2 img {
   width: 25px;
   height: 25px;
@@ -91,6 +99,12 @@ header nav {
 a {
   text-decoration: none;
   color: var(--title-color);
+}
+
+a.big-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .big-button {
@@ -375,7 +389,7 @@ main {
 .rectangle button {
   background: none;
   border: none;
-  padding: 0;
+  padding: 8px;
   margin: 0;
   cursor: pointer;
 }
@@ -406,7 +420,7 @@ main {
   position: relative;
   width: 100%;
   height: 40vh;
-  max-width: 32rem;
+  max-width: 40rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -415,7 +429,7 @@ main {
 
 .carousel-wrapper {
   position: relative;
-  height: 100%;
+  height: auto;
   width: 100%;
   overflow: hidden;
   border-radius: 0.5rem;
@@ -437,20 +451,21 @@ main {
 }
 
 
-/* .carousel-button {
+.carousel-button {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   padding: 0.5rem;
   border-radius: 9999px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--button-bg-color);
   border: none;
   cursor: pointer;
-  transition: background-color 200ms;
+  transition: opacity 200ms;
 }
 
 .carousel-button:hover {
-  background-color: rgba(255, 255, 255, 1);
+  opacity: 80%;
 }
 
 .carousel-button.prev {
@@ -459,7 +474,7 @@ main {
 
 .carousel-button.next {
   right: 0.5rem;
-} */
+}
 
 .carousel-dots {
   margin-top: 30px;
@@ -630,6 +645,7 @@ footer .content {
   main {
     margin-left: 156px;
     margin-right: 156px;
+    gap: 96px;
   }
 
 
@@ -749,14 +765,48 @@ footer .content {
     width: 20vw;
   }
 
+  .carousel-button {
+    display: block;
+  }
+
+  .carousel-container {
+    height: 100%;
+  }
+
+  .carousel-wrapper {
+    width: 140%;
+    height: 100%;
+  }
+
+  .carousel-slide {
+    width: 33.333333%;
+  }
+
+  .carousel-dot {
+    display: none;
+  }
+
   .message-container {
     flex-direction: unset;
     justify-content: center;
+    gap: 60px;
+    padding: 50px;
+  }
+
+  .message-container h2 {
+    text-align: left;
+    align-self: baseline;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 54px;
+    width: 200px;
+    margin-bottom: 24px;
   }
 
   footer {
     margin-left: 156px;
     margin-right: 156px;
+    overflow: visible;
   }
 
   footer .content {
@@ -765,16 +815,26 @@ footer .content {
   }
 
   .christmas-ball1 {
-    top: 40%;
+    top: 50%;
     left: 4%;
   }
 
   .christmas-ball2 {
     top: 16%;
-    left: 92%;
+    left: 98%;
   }
 
   footer .stores img {
     width: 100px;
   }
+
+  .footer-1 div {
+    margin-bottom: 20px;
+    margin-top: 14px;
+  }
+
+  .copyright {
+    margin-bottom: 1rem;
+  }
+
 }
