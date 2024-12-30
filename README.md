@@ -1,7 +1,5 @@
-# React + Vite
+# A Responsive Christmas Website!
 
-Custom template.
+A store mockup website to celebrate Christmas with.
 
-Just run these commands: <br>
-npm install react react-dom; `npm install --save-dev @types/react @types/react-dom @vitejs/plugin-react eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-react-refresh vite;`
-npm run dev
+Run `npm install` and `npm run dev` to host it on your computer.
