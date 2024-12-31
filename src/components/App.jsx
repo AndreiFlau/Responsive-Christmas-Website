@@ -1,13 +1,14 @@
 import "../styles/App.css";
-import Header from "./Header";
-// import Footer from "./Footer";
+import Main from "/src/components/Main.jsx";
+import Header from "/src/components/Header.jsx";
+import Footer from "/src/components/Footer.jsx";
 
 function App() {
   return (
     <>
       <Header />
-      {/* <Main />
-      <Footer /> */}
+      <Main />
+      <Footer />
     </>
   );
 }
