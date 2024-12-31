@@ -1,7 +1,7 @@
 import "../styles/App.css";
-import Main from "/src/components/Main.jsx";
-import Header from "/src/components/Header.jsx";
-import Footer from "/src/components/Footer.jsx";
+import Main from "./Main";
+import Header from "./Header";
+import Footer from "./Footer";
 
 function App() {
   return (
