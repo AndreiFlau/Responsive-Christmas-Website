@@ -350,7 +350,9 @@ main {
   padding-bottom: 5px;
   padding-right: 30px;
   padding-left: 30px;
-  width: 35vw;
+  max-width: calc(50% - 1rem);
+  flex: 1 1 calc(50% - 1rem);
+  overflow-wrap: break-word;
 }
 
 .gift .items h3 {
@@ -800,6 +802,7 @@ footer .content {
 
   .gift .items div {
     width: 20vw;
+    max-width: none;
   }
 
   .carousel-button {
