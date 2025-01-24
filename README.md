@@ -26,5 +26,9 @@ Based on [this Figma design](https://www.figma.com/community/file/12604662059628
 
 - Fully responsive layout
 - Modern UI/UX
-- Holiday-themed design
+- Christmas-themed design
 - Interactive elements
+- Modern hamburger menu for mobile navigation
+- Smooth hover animations on buttons
+- Social media integration
+- CSS Grid and Flexbox layouts
